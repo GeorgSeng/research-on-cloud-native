@@ -8,9 +8,17 @@ ifndef::backend[:backend: html5]
 
 == What we are going to talk about
 
-* aaa
-* bbb
-* ccc [red]#red text#
+* Software Architecture
+* Was heist Cloud-Native
+* Eclipse Microprofile
+** What are parts of the Sepcification
+* Quarkus Example
+** Health Checks
+** openAPI
+** openTracing
+** metrics
+** FaultTolerance
+*** Circuit Breaker
 
 === Design of Software
 

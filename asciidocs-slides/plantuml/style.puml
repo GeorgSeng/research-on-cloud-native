@@ -1,0 +1,9 @@
+skinparam usecase {
+	ArrowColor black
+
+	borderColor #566573
+	backgroundColor lightgray
+	fontName Calibri
+	fontSize 17
+	fontColor black
+}

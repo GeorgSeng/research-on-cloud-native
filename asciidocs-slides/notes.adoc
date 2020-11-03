@@ -1,0 +1,114 @@
+= Notes for the Presentation about Cloud Native and Microservices
+GeorgSeng
+1.0, 2020-10-27
+:toc:
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+
+
+== History of software development
+
+* Short talk about project management.
+** Complicated to agile. => (kind of)
+** Monolithic applications to microservices.
+
+== What means Cloud-Native
+
+=== Key values of cloud-native
+
+==== Requirements
+include::
+
+[plantuml,align=center]
+----
+include::plantuml/cloud-native-requirements.puml[]
+----
+
+cloud native design pattern book s.11
+
+=== Motive vor a different type of software
+
+* new requirements and changed user behavior
+* changed software development life cycle
+* traditional software approaches to expensive
+* new or enhanced technology's like containers
+
+=== What is SOA
+
+=== Problems of Monlitic software / befits of MicroServices 
+
+
+
+* short talk about CNCF (Cloud-Native-Computing-Foundation)
+
+== Eclipse MicroProfile
+
+* Short talk about the Eclipse Foundation and its projects (Jakarta EE  and Eclipse MicroProfile)
+* naming alternatives Spring Boot, Vert.x, Amazon Correto
+* short comparison of Spring Boot and Eclipse MicroProfile
+
+=== Parts of the MicroProfile Specification
+link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc[Eclipse MicroProfile Spec]
+
+* MP 3 -> MP 4 What are then new cool things
+** GraphQL
+
+== Quarkus Example
+=== openAPI
+MicroProfile OpenAPI provides a unified Java API for the OpenAPI v3 specification that all application developers can use to expose their API documentation.
+
+* Swagger UI
+=== FaultTolerance
+==== Circuit Breaker
+MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic. Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing. Fault Tolerance 3.0 is now dependent on Jakarta EE 8 technologies.
+
+=== Health Checks
+MicroProfile Health provides the ability to expose the health of an application to the underlying platform (ex: Kubernetes)
+
+=== metrics
+MicroProfile Metrics provides a unified way for MicroProfile applications to export monitoring data to management agents. Metrics will also provide a common Java API for exposing their telemetry data.
+
+* Prometheus
+
+=== openTracing
+MicroProfile OpenTracing defines an API and associated behaviors that allow services to easily participate in a distributed tracing environment.
+
+* Jaeger
+
+== Sources
+
+=== Eclipse MicroProfile
+link:https://jax.de/blog/microservices/spring-boot-vs-eclipse-microprofile-microservices-frameworks-im-vergleich/[SPRING BOOT VS. ECLIPSE MICROPROFILE: MICROSERVICES-FRAMEWORKS IM VERGLEICH, 2020-10-28]
+link:https://www.itcentralstation.com/products/eclipse-microprofile-alternatives-and-competitors[Eclipse MicroProfile Alternatives and Competitors, 2020-10-28]
+link:https://thenewstack.io/10-key-attributes-of-cloud-native-applications/#:~:text=Cloud%20native%20is%20a%20term,processes%20and%20continuous%20delivery%20workflows.[10 KEY ATTRIBUTES OF CLOUD-NATIVE APPLICATIONS, 2020-10-28]
+link:https://github.com/cncf/foundation/blob/master/charter.md[cncf Charter]
+
+
+=== Health Checks
+Motivation
+
+Health checks are used to probe the state of a computing node from another machine (i.e. kubernetes service controller) with the primary target being cloud infrastructure environments where automated processes maintain the state of computing nodes.
+
+In this scenario, health checks are used to determine if a computing node needs to be discarded (terminated, shutdown) and eventually replaced by another (healthy) instance.
+
+It’s not intended (although could be used) as a monitoring solution for human operators.
+
+link:https://github.com/eclipse/microprofile-health[Eclipse MicroProfile Health, 2020-10-28]
+
+=== OKD (Idea vor fancy deployment) NEE_MAG_NICHT
+
+The Community Distribution of Kubernetes that powers Red Hat OpenShift.
+
+
+Built around a core of OCI container packaging and Kubernetes container cluster management, OKD is also augmented by application lifecycle management functionality and DevOps tooling. OKD provides a complete open source container application platform.
+
+https://www.okd.io/
+
+
+https://www.okd.io/crc.html
+
+When prompted for a pull secret, use: {"auths":{"fake":{"auth": "Zm9vOmJhcgo="}}}
+
+https://code-ready.github.io/crc/

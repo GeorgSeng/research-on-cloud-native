@@ -1,0 +1,39 @@
+@startuml
+
+skinparam usecase {
+	ArrowColor black
+
+	borderColor #566573
+	backgroundColor #00000
+	fontName Calibri
+	fontSize 17
+	fontColor black
+}
+
+(Always up) as Comp1
+(Resilience) as Comp11
+(Redundancy) as Comp111
+(Adaptability) as Comp112
+(Modular) as Comp113
+(Release \n frequently) as Comp2
+(Agility) as Comp21
+
+Comp1 --> Comp11
+Comp11 --> Comp111
+Comp11 --> Comp112
+Comp11 --> Comp113
+
+Comp2 --> Comp21
+Comp21 --> Comp113
+
+(Anywhere, \n any device) as Comp02
+(Intent of Things) as Comp03
+(Large and fluctuating volumes \n of requests and data) as Comp04
+(Dynamic scalability) as Comp05
+
+Comp02 --> Comp04
+Comp03 --> Comp04
+Comp04 --> Comp05
+
+@enduml
+----
