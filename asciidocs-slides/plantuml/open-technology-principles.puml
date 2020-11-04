@@ -1,0 +1,21 @@
+@startuml
+skinparam usecase {
+	ArrowColor black
+
+	borderColor #566573
+	backgroundColor #00000
+	fontName Calibri
+	fontSize 17
+	fontColor black
+}
+
+(Open\nsource) as Comp1
+(Open\nstandards) as Comp2
+(Open\ngovernance) as Comp3
+
+Comp1 -- Comp2
+Comp1 -- Comp3
+Comp2 -right- Comp3
+
+'/ Figure based on: Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.7 '/
+@enduml
