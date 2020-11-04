@@ -12,210 +12,208 @@ skinparam timing {
 
 concise "Technology" as CTech
 concise "Tools" as CToll
-concise "Project-Management" as CProj
+
 
 /'
 @1971
 CTech is "Microprocessor"
 CToll is {-}
-CProj is {-}
+
 @1972
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1973
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1974
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1975
 CTech is {-}
 CToll is {-}
-CProj is {-}
 
 @1976
 CTech is "Apple 1"
 CToll is {-}
-CProj is {-}
+
 @1977
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1978
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1979
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1980
 CTech is {-}
 CToll is {-}
-CProj is {-}
-'/
+
 @1981
 CTech is "IBM PC"
 CToll is {-}
-CProj is {-}
+
 @1982
 CTech is {-}
 CToll is "RPC"
-CProj is {-}
+
 @1983
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1984
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1985
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1986
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1987
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1988
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1989
 CTech is {-}
 CToll is {-}
-CProj is {-}
+'/
 @1990
 CTech is "WWW"
 CToll is {-}
-CProj is {-}
+
 @1991
 CTech is "Linux"
 CToll is {-}
-CProj is {-}
+
 @1992
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1993
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1994
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1995
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1996
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1997
 CTech is "Google"
 CToll is {-}
-CProj is {-}
+
 @1998
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @1999
 CTech is {-}
 CToll is "SOAP \n REST"
-CProj is {-}
+
 @2000
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2001
 CTech is "VMware"
 CToll is {-}
-CProj is {-}
+
 @2002
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2003
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2004
 CTech is "Eclipse Found. \n Facebook"
 CToll is {-}
-CProj is {-}
+
 @2005
 CTech is "YouTube"
 CToll is {-}
-CProj is {-}
+
 @2006
 CTech is "Twitter \n AWS"
 CToll is {-}
-CProj is {-}
+
 @2007
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2008
 CTech is "Netflix"
 CToll is "LXC"
-CProj is {-}
+
 @2009
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2010
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2011
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2012
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2013
 CTech is {-}
 CToll is "Docker"
-CProj is {-}
+
 @2014
 CTech is {-}
 CToll is "Kubernetes"
-CProj is {-}
+
 @2015
 CTech is "CNCF"
 CToll is "GraphQL"
-CProj is {-}
+
 @2016
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2017
 CTech is "MicroProfile"
 CToll is {-}
-CProj is {-}
+
 @2018
 CTech is "Quarkus"
 CToll is {-}
-CProj is {-}
+
 @2019
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 @2020
 CTech is {-}
 CToll is {-}
-CProj is {-}
+
 
 @enduml
