@@ -35,5 +35,17 @@ Comp02 --> Comp04
 Comp03 --> Comp04
 Comp04 --> Comp05
 
+(Highly, \n distributed) as CompL31
+(Constantly \n changing) as CompL32
+
+Comp111 ...> CompL31
+Comp113 ...> CompL31
+Comp05 ...> CompL31
+
+Comp112 ...> CompL32
+Comp21 ...> CompL32
+Comp05 ...> CompL32
+
+'/ Figure based om SOURCE:DAVIS, CORNELIA (2019). Cloud Native Patterns - DESIGNING CHANGE-TOLERANT SOFTWARE. Shelter Island, NY: Manning Publications Co., p.12'/
 @enduml
 ----
