@@ -1,46 +1,123 @@
 = Research on Cloud-Native
 GeorgSeng
 1.0, 2020-10-27
+:toc:
+:toclevels: 4
+:toc-title: Contents
 ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :icons: font
 
+
+
+
 == What we are going to talk about
 
-* Software Architecture
-* Was heist Cloud-Native
-* Eclipse Microprofile
-** What are parts of the Sepcification
+//[.old]
+//--
+//* Software Architecture
+//* Was heist Cloud-Native
+//* Eclipse Microprofile
+//** What are parts of the Sepcification
+//* Quarkus Example
+//** Health Checks
+//** openAPI
+//** openTracing
+//** metrics
+//** FaultTolerance
+//*** Circuit Breaker
+//--
+
+* Short history of IT
+* What is Cloud-Native?
+// ** Key values of cloud-native
+// ** Motive vor a different type of software ?????
+* OpenSource Foundations
 * Quarkus Example
-** Health Checks
-** openAPI
-** openTracing
-** metrics
-** FaultTolerance
-*** Circuit Breaker
+** MicroProfile OpenAPI
+** MicroProfile Fault Tolerance
+** Monitoring
+//MicroProfile Health
+//MicroProfile Metrics
+//MicroProfile openTracing
+//Short Recap
 
-=== Design of Software
+// Links
 
-[plantuml,cld,png]
-----
-@startuml
-class Cloud {
-brand: IBM
-type: String
-}
-@enduml
-----
+include::introduction.adoc[]
+include::eclipse-microprofile.adoc[leveloffset=+1]
+
+// Link Example
+//include::example.adoc[leveloffset=+1]
+== MicroProfile Example with Quarkus
+
+* MicroProfile OpenAPI
+* MicroProfile Fault Tolerance
+* Monitoring
+** MicroProfile Health
+** MicroProfile Metrics
+** MicroProfile OpenTracing
+** Short Recap
+
+include::openAPI.adoc[leveloffset=+1]
+
+include::fault-tolerance.adoc[leveloffset=+1]
+
+== Monitoring
+
+a must due to  size and complexity of a Cloud-Native.
+
+This can be achieved by:
+
+* Health Checks
+* Metrics
+* Open Tracing
+
+include::healt-checks.adoc[leveloffset=+1]
+include::metrics.adoc[leveloffset=+1]
+include::open-tracing.adoc[leveloffset=+1]
+
+== Monitorring Short Recap
+
+* The readiness and liveness of your services through MicroProfile Health and the ability to integrate these with Kubernetes
+infrastructure.
+* The service runtime analysis through MicroProfile Metrics and
+the ability to monitor and alert through tools such as Prometheus and Grafana.
+* The ability to understand the flow of requests through a system
+of microservices through OpenTracing and tracer tools such as
+Apache Zipkin or Jaeger.
 
 [.notes]
 --
-The way form monolithic software to software as a service.
+???? kürzen
+
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
 --
 
-== Third Slide
 
-image:https://images.pexels.com/photos/3966425/pexels-photo-3966425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940[VW]
+//=== Design of Software
+//
+//[plantuml,cld,png]
+//----
+//@startuml
+//class Cloud {
+//brand: IBM
+//type: String
+//}
+//@enduml
+//----
+//
+//[.notes]
+//--
+//The way from monolithic software to software as a service.
+//--
 
-== Fourth Slide
-
-IMPORTANT: Something very important
+//
+//== Third Slide
+//
+//image:https://images.pexels.com/photos/3966425/pexels-photo-3966425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940[VW]
+//
+//== Fourth Slide
+//
+//IMPORTANT: Something very important

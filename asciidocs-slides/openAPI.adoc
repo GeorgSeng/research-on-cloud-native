@@ -1,0 +1,17 @@
+= MicroProfile OpenAPI
+
+MicroProfile OpenAPI provides a unified Java API for the OpenAPI v3 specification that all application developers can use
+to expose their API documentation.
+
+_Source:link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc#mp-opentracing[Github: eclipse/microprofile (Required APIs for MP4), 2020-11-04]_
+
+== Example
+
+* Swagger UI
+
+== What can I do with the OpenAPI data
+
+* API first development => generate service based on openAPI
+* autoconfigure other services or tools based on openAPI
+...
+

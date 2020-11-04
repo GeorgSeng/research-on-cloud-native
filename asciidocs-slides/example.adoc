@@ -1,0 +1,84 @@
+//= Notes for the Presentation about Cloud Native and Microservices
+//GeorgSeng
+//1.0, 2020-10-27
+//:toc:
+//ifndef::sourcedir[:sourcedir: ../src/main/java]
+//ifndef::imagesdir[:imagesdir: images]
+//ifndef::backend[:backend: html5]
+//:icons: font
+
+
+== MicroProfile Example with Quarkus
+
+include::openAPI.adoc[leveloffset=+1]
+
+include::fault-tolerance.adoc[leveloffset=+1]
+
+=== Monitoring
+
+Is a musst due to the size and complexity of a Cloud-Native.
+
+This can be archived by:
+
+* Health Checks
+* Metrics
+* Open Tracing
+
+include::healt-checks.adoc[leveloffset=+1]
+include::metrics.adoc[leveloffset=+1]
+include::open-tracing.adoc[leveloffset=+1]
+
+
+== Short Recap
+
+* The readiness and liveness of your services through MicroProfile Health and the ability to integrate these with Kubernetes
+infrastructure.
+* The service runtime analysis through MicroProfile Metrics and
+the ability to monitor and alert through tools such as Prometheus and Grafana.
+* The ability to understand the flow of requests through a system
+of microservices through OpenTracing and tracer tools such as
+Apache Zipkin or Jaeger.
+
+[.notes]
+--
+???? kürzen
+
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
+--
+
+
+[.sources general]
+--
+== Eclipse MicroProfile
+
+* link:https://jax.de/blog/microservices/spring-boot-vs-eclipse-microprofile-microservices-frameworks-im-vergleich/[SPRING BOOT VS. ECLIPSE MICROPROFILE: MICROSERVICES-FRAMEWORKS IM VERGLEICH, 2020-10-28]
+* link:https://www.itcentralstation.com/products/eclipse-microprofile-alternatives-and-competitors[Eclipse MicroProfile Alternatives and Competitors, 2020-10-28]
+* link:https://thenewstack.io/10-key-attributes-of-cloud-native-applications/#:~:text=Cloud%20native%20is%20a%20term,processes%20and%20continuous%20delivery%20workflows.[10 KEY ATTRIBUTES OF CLOUD-NATIVE APPLICATIONS, 2020-10-28]
+* link:https://github.com/cncf/foundation/blob/master/charter.md[cncf Charter]
+
+== APIs
+
+* https://blog.readme.com/the-history-of-rest-apis/
+* https://www.ionos.at/digitalguide/websites/web-entwicklung/graphql/
+--
+
+[.old]
+--
+=== OKD (Idea vor fancy deployment) NEE_MAG_NICHT
+
+The Community Distribution of Kubernetes that powers Red Hat OpenShift.
+
+
+Built around a core of OCI container packaging and Kubernetes container cluster management, OKD is also augmented by application lifecycle management functionality and DevOps tooling. OKD provides a complete open source container application platform.
+
+https://www.okd.io/
+
+
+https://www.okd.io/crc.html
+
+When prompted for a pull secret, use: {"auths":{"fake":{"auth": "Zm9vOmJhcgo="}}}
+
+https://code-ready.github.io/crc/
+--
+
+

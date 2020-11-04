@@ -1,0 +1,140 @@
+== History of software development
+
+.Short History
+[plantuml,short-history,align=center]
+----
+include::plantuml/short-history.puml[]
+----
+
+
+[.notes]
+--
+* Short talk about project management.
+* Complicated to agile. => (kind of)
+* Monolithic applications to microservices.
+--
+
+== What is Cloud-Native
+
+Definition: Cloud-native software is "highly distributed", must operate in a constantly changing environment, and is itself constantly changing.
+
+[.notes]
+--
+Source:
+DAVIS, CORNELIA (2019). Cloud Native Patterns - DESIGNING CHANGE-TOLERANT SOFTWARE. Shelter Island, NY: Manning Publications Co., p.11
+--
+
+=== Key values of cloud-native
+
+==== Requirements
+
+.Cloud Native reqirements
+[plantuml,cloud-native-requirements,align=center,svg]
+----
+include::plantuml/cloud-native-requirements.puml[]
+---
+// ????????????????????????????????? --- not ----
+
+[.notes]
+--
+//Die Grafik zeigt uns vier mögliche Anforderungen an ein
+In this graphics we can see fore different requirements that pay a big role in cloud native.
+All together define what is imortatnt to a system to be truly cloud native.
+
+* The first requrement is about allways up.
+** This brings us to Reilience. A Microservice must be able to recuver from a huge number of problems.
+*** This means redundancy is needed to be abele to jump in if a exident happends.
+*** Adaptability "able to adjust to new conditions" the environment and the software is constatly changing and this musst be posible
+*** Modularity enables the system to be
+**** less complex
+**** there for more easy to develop and maintane
+**** in case of falure not everything would go down with it
+**** improves scaling and redundacy for backup
+* As a matter of fact the release frequency increased a lot
+** so Agile software fits with agile development is a must and benefits alot in cloud native.
+** Becouse Agile development workes great with the modulare microservice architekture of cloud native systems
+
+* Anywehre, any device Always up meanse ther are times of hige and of low demande. To cut coast the system needs to be abelt to adapt to the demande and environment.
+?????? Rechte seite vom diagramm beschreibung
+As before menchoned the number of devices and services serfices increased over the years so the archiotecture had to be changed.
+
+
+Source:
+DAVIS, CORNELIA (2019). Cloud Native Patterns - DESIGNING CHANGE-TOLERANT SOFTWARE. Shelter Island, NY: Manning Publications Co., p.10-12
+--
+
+=== Reasons for a different type of software
+
+* new requirements and changed user behavior
+* changed software development life cycle
+* traditional software approaches unsuitable
+* new or enhanced technologies like containers
+
+[.notes]
+--
+Quick recab of previous section
+--
+
+//=== What is SOA => Microservices / The Twelve Factors
+//
+//?
+//
+//=== Problems of Monolithic software / befits of MicroServices
+//
+//?
+
+=== OpenSource Foundations
+
+.Open technology principles
+[plantuml,open-technology-principles,align=center,svg]
+----
+include::plantuml/open-technology-principles.puml[]
+----
+
+[.notes]
+--
+* Cost
+** I can use it without paying, and there is both community and
+paid support available.
+* Speed
+If I use this open source project, it will help me get my job done
+quicker.
+** Influence
+If I find a problem, I can fix it or raise an issue. If I need an
+enhancement, I can contribute it or request a new feature.
+* Community
+** If I have a problem, the community will hopefully help; I don’t
+need to open a support ticket. I can also become part of the
+community.
+* Opportunity
+** Significant, diverse open source projects grow larger markets
+where there will be demand for my skills.
+* License
+** Does the open source license permit me to use the software in
+the way I’d like to? Many open source projects come with per‐
+missive licenses on usage that allow modification, sharing, or
+creation of commercial solutions. Some, of course, do not allow
+this flexibility.
+* Purpose
+** Why does the project exist? This goes beyond its technical scope
+and covers factors such as why the contributors are
+participating.
+* Community
+** Does the open source project have a vibrant contributor and
+user community?
+* Standards
+** Does the project implement open standard APIs, allowing me to
+switch to other providers?
+* Governance
+** Is the project maintained under an open governance model,
+such as those under the Apache Software Foundation, Eclipse
+Foundation, or Linux Foundation? We’ll talk more about open
+governance later in this chapter.
+
+??????? Kürzen auf das wehesendlich
+
+The Cloud native computing foundation was created for kubernetes.
+
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.24-25
+--
+

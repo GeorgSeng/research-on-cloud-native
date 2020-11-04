@@ -1,0 +1,77 @@
+= MicroProfile Fault Tolerance
+
+== Motive
+
+* every minute of downtime costs thousands of Euros
+* separate execution logic from business logic
+
+[.notes]
+--
+Companies try to archive four-nine availability that means 99,99% up or 52min and 36 sec downtime per year.
+Some even want to archive fife-nine availability that means 5min and 15 sec per year.
+
+Having a system with 10 Microservices means that all of them are a source to fail.
+There fore the system hase a overall availability of 99,99%.
+Having 100 means a overall system availability of 99,9%
+
+This is very bad therefore every microservice needs a strategy to reduce the risk of ffailure and
+b a strategy on how to deal with failures of other dependent microservices.
+
+-
+MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
+Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
+Fault Tolerance 3.0 is now dependent on Jakarta EE 8 technologies.
+link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc#mp-opentracing[Github: eclipse/microprofile (Required APIs for MP4), 2020-11-04]
+-
+--
+
+== Strategies
+
+* Retry
+* Timeout
+* Fallback
+* Circuit break
+* Bulkhead
+* Asynchronous
+
+[.notes]
+--
+* Retry
+** The Retry strategy is useful for short-lived transient failures.
+You can configure the number of times a service request will be
+retried and the time interval between retries.
+* Timeout
+** Timeout allows you to time a request out before it completes.
+This is useful if you are calling a service that might not respond
+in a reasonable amount of time—for example, within your serv‐
+ice’s service level agreement (SLA) response time.
+* Fallback
+** Fallback allows you to define an alternative action to take in the
+event of a failure—for example, calling an alternative service or
+returning cached data.
+* Circuit breaker
+** A circuit breaker helps prevent repeated calls to a failing service.
+If a service begins to have issues, the circuit is opened and
+immediately fails requests until the service becomes stable and
+the circuit is closed.
+* Bulkhead
+** Bulkhead is useful when you are calling a service that is at risk
+of being overloaded. You can restrict the number of current
+requests to a service and queue up or fail requests over this
+limit.
+* Asynchronous
+** Asynchronous allows you to offload requests to separate threads
+and then use Futures to handle the responses. An object repre‐
+senting the result of an asynchronous computation, the Future
+can be used to retrieve a result once the computation has
+completed.
+
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.53-54
+--
+
+== Circuit Breaker
+
+== Definiton form MP-GitHub ????nötig?
+MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
+Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
+Fault Tolerance 3.0 is now dependent on Jakarta EE 8 technologies.

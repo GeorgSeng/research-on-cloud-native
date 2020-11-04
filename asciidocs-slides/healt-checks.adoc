@@ -1,0 +1,19 @@
+= MicroProfile Health
+
+MicroProfile Health provides the ability to expose the health of an application to the underlying platform (ex: Kubernetes)
+
+_Source:link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc#mp-opentracing[Github: eclipse/microprofile (Required APIs for MP4), 2020-11-04]_
+
+[.notes]
+--
+Motivation
+
+Health checks are used to check the state of a computing node from another machine (i.e. kubernetes service controller)
+with the primary target,  being cloud infrastructure environments where automated processes maintain the state of computing nodes.
+
+In this scenario, health checks are used to determine if a computing node needs to be discarded (terminated, shutdown) and eventually replaced by another (healthy) instance.
+
+It’s not intended (although could be used) as a monitoring solution for human operators.
+
+link:https://github.com/eclipse/microprofile-health[Eclipse MicroProfile Health, 2020-10-28]
+--

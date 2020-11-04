@@ -1,0 +1,32 @@
+== Barister MicroService with Quarkus
+
+dcnq=demo colud native quarkus
+
+.Create basic project
+----
+mvn io.quarkus:quarkus-maven-plugin:1.9.1.Final:create \
+    -DprojectGroupId=at.htl.dcnq.barista \
+    -DprojectArtifactId=dcnq-barista \
+    -DclassName="at.htl.dcnq.barista.rest.GreetingResource" \
+    -Dpath="/greeting" \
+    -Dextensions="kotlin,resteasy-jsonb"
+cd dcnq-barista
+
+----
+
+.CDI
+----
+
+@ApplicationScoped //important
+class GreetingService {
+
+    fun greeting(name: String): String {
+        return "hello $name"
+    }
+
+}
+
+    @Inject
+    @field: Default //Kotlin requires a @field: xxx qualifier as it has no @Target on the annotation definition. Add @field: xxx in this example. @Default is used as the qualifier, explicitly specifying the use of the default bean.
+    lateinit var service: GreetingService
+----

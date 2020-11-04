@@ -1,0 +1,11 @@
+= Eclipse MicroProfile
+
+* Short talk about the Eclipse Foundation and its projects (Jakarta EE  and Eclipse MicroProfile)
+* naming alternatives Spring Boot, Vert.x, Amazon Correto
+* short comparison of Spring Boot and Eclipse MicroProfile
+
+== Parts of the MicroProfile Specification
+#link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc[Eclipse MicroProfile Spec]#
+
+* MP 3 -> MP 4 - What are the new cool things?
+** GraphQL

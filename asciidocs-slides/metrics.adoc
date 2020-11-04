@@ -1,0 +1,35 @@
+= MicroProfile Metrics
+
+MicroProfile Metrics provides a unified way for MicroProfile applications to export monitoring data to management agents.
+Metrics will also provide a common Java API for exposing their telemetry data.
+
+_Source:link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc#mp-opentracing[Github: eclipse/microprofile (Required APIs for MP4), 2020-11-03]_
+
+== Types of Metrics
+
+* base
+* vendor
+* application
+* automatic generated fault tolerance and other
+
+[.notes]
+--
+* base: JVM metrics
+** base:cpu_system_load_average 0.34
+** base:memory_max_heap_bytes 5.36870912E8
+* vandor: runtime metrics
+** vendor:servlet_com_ibm_ws_microprofile_openapi_open_api_servlet
+_response_time_total_seconds 0.35594430000000005
+** vendor:threadpool_default_executor_size 12
+* application: application metrics
+** application:ft_com_sebastian_daschner_coffee_shop
+_control_barista_retrieve_brew_status_fallback_calls_total 6
+** application:ft_com_sebastian_daschner_coffee_shop_control
+_barista_retrieve_brew_status_retry_retries_total 18
+
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.53-54
+--
+
+== Prometheus & Graphana
+
+asdf
