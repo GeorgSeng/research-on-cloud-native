@@ -1,0 +1,25 @@
+== Example Coffee-Shop MicroService with Quarkus
+
+.Create Project with maven
+----
+mvn io.quarkus:quarkus-maven-plugin:1.9.1.Final:create \
+    -DprojectGroupId=at.htl.dcnq.coffeeshop \
+    -DprojectArtifactId=dcnq-coffee-shop \
+    -DclassName="at.htl.dcnq.coffeeshop.rest.GreetingResource" \
+    -Dpath="/greeting" \
+    -Dextensions="kotlin,resteasy-jsonb"
+cd dcnq-coffee-shop
+
+----
+
+.Add Hibernet abd JDBC
+----
+./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-hibernate-orm-panache-kotlin"
+./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-jdbc-postgresql"
+----
+
+.Add Database
+----
+./mvnw quarkus:add-extension -Dextensions="agroal"
+./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql"
+----
