@@ -9,39 +9,15 @@ ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :icons: font
 
-
-
-
 == What we are going to talk about
-
-//[.old]
-//--
-//* Software Architecture
-//* Was heist Cloud-Native
-//* Eclipse Microprofile
-//** What are parts of the Sepcification
-//* Quarkus Example
-//** Health Checks
-//** openAPI
-//** openTracing
-//** metrics
-//** FaultTolerance
-//*** Circuit Breaker
-//--
 
 * Short history of IT
 * What is Cloud-Native?
-// ** Key values of cloud-native
-// ** Motive vor a different type of software ?????
 * OpenSource Foundations
 * Quarkus Example
 ** MicroProfile OpenAPI
 ** MicroProfile Fault Tolerance
 ** Monitoring
-//MicroProfile Health
-//MicroProfile Metrics
-//MicroProfile openTracing
-//Short Recap
 
 // Links
 
@@ -80,11 +56,11 @@ include::open-tracing.adoc[leveloffset=+1]
 
 == Monitorring Short Recap
 
-* The readiness and liveness of your services through MicroProfile Health and the ability to integrate these with Kubernetes
+* The *readiness and liveness* of your services through MicroProfile Health and the ability to integrate these with Kubernetes
 infrastructure.
-* The service runtime analysis through MicroProfile Metrics and
+* The service *runtime analysis* through MicroProfile Metrics and
 the ability to monitor and alert through tools such as Prometheus and Grafana.
-* The ability to understand the flow of requests through a system
+* The *ability to understand the flow* of requests through a system
 of microservices through OpenTracing and tracer tools such as
 Apache Zipkin or Jaeger.
 
@@ -94,30 +70,3 @@ Apache Zipkin or Jaeger.
 
 Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
 --
-
-
-//=== Design of Software
-//
-//[plantuml,cld,png]
-//----
-//@startuml
-//class Cloud {
-//brand: IBM
-//type: String
-//}
-//@enduml
-//----
-//
-//[.notes]
-//--
-//The way from monolithic software to software as a service.
-//--
-
-//
-//== Third Slide
-//
-//image:https://images.pexels.com/photos/3966425/pexels-photo-3966425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940[VW]
-//
-//== Fourth Slide
-//
-//IMPORTANT: Something very important
