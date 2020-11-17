@@ -6,7 +6,7 @@ skinparam timing {
 	borderColor #566573
 	backgroundColor lightgray
 	fontName Calibri
-	fontSize 17
+	fontSize 15
 	fontColor black
 }
 
@@ -210,10 +210,10 @@ CToll is {-}
 @2019
 CTech is {-}
 CToll is {-}
-
+/'
 @2020
-CTech is {-}
+CTech is "MicroProfile \n 4"
 CToll is {-}
-
+'/
 
 @enduml
