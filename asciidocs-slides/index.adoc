@@ -66,7 +66,5 @@ Apache Zipkin or Jaeger.
 
 [.notes]
 --
-???? kürzen
-
-Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
+ Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
 --

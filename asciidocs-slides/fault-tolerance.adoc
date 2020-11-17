@@ -7,15 +7,15 @@
 
 [.notes]
 --
-Companies try to archive four-nine availability that means 99,99% up or 52min and 36 sec downtime per year.
-Some even want to archive fife-nine availability that means 5min and 15 sec per year.
+Companies try to archive four-nine availability that means 99,99% up or 52 min and 36 sec downtime per year.
+Some even want to archive five-nine availability that means 5 min and 15 sec per year.
 
 Having a system with 10 Microservices means that all of them are a source to fail.
-There fore the system hase a overall availability of 99,99%.
-Having 100 means a overall system availability of 99,9%
+Therefore the system has an overall availability of 99,99%.
+Having 100 means a overall system availability of 99,9%.
 
-This is very bad therefore every microservice needs a strategy to reduce the risk of ffailure and
-b a strategy on how to deal with failures of other dependent microservices.
+This is very bad therefore every microservice needs a strategy to reduce the risk of failure and
+b a strategy on how to deal with failures of other dependent Microservices.
 
 -
 MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
@@ -43,8 +43,8 @@ retried and the time interval between retries.
 * Timeout
 ** Timeout allows you to time a request out before it completes.
 This is useful if you are calling a service that might not respond
-in a reasonable amount of time—for example, within your serv‐
-ice’s service level agreement (SLA) response time.
+in a reasonable amount of time—for example, within your service’s 
+service level agreement (SLA) response time.
 * Fallback
 ** Fallback allows you to define an alternative action to take in the
 event of a failure—for example, calling an alternative service or
@@ -61,20 +61,11 @@ requests to a service and queue up or fail requests over this
 limit.
 * Asynchronous
 ** Asynchronous allows you to offload requests to separate threads
-and then use Futures to handle the responses. An object repre‐
-senting the result of an asynchronous computation, the Future
+and then use Futures to handle the responses. An object representing 
+the result of an asynchronous computation, the Future
 can be used to retrieve a result once the computation has
 completed.
 
-Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.53-54
---
-
-[.notes]
---
-== Circuit Breaker
-
-== Definiton form MP-GitHub ????nötig?
-MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
-Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
-Fault Tolerance 3.0 is now dependent on Jakarta EE 8 technologies.
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). 
+Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.53-54
 --
