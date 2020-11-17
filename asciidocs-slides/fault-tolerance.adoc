@@ -69,9 +69,12 @@ completed.
 Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.53-54
 --
 
+[.notes]
+--
 == Circuit Breaker
 
 == Definiton form MP-GitHub ????nötig?
 MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
 Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
 Fault Tolerance 3.0 is now dependent on Jakarta EE 8 technologies.
+--

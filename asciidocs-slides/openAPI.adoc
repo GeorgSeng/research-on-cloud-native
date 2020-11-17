@@ -1,17 +1,28 @@
 = MicroProfile OpenAPI
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
 
 MicroProfile OpenAPI provides a unified Java API for the OpenAPI v3 specification that all application developers can use
 to expose their API documentation.
 
 _Source:link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc#mp-opentracing[Github: eclipse/microprofile (Required APIs for MP4), 2020-11-04]_
 
-== Example
+== Swagger
 
-* Swagger UI
+//* Swagger UI
+image:https://static1.smartbear.co/swagger/media/images/tools/opensource/swagger_ui.png?ext=.png[Swagger, 2020-11-05]
+_Source:link:https://static1.smartbear.co/swagger/media/images/tools/opensource/swagger_ui.png?ext=.png[Swagger, 2020-11-05]_
 
-== What can I do with the OpenAPI data
+== What can I do with the OpenAPI
 
-* API first development => generate service based on openAPI
+* contract-first development => generate service based on openAPI
+* implementation-first => generate contract
 * autoconfigure other services or tools based on openAPI
-...
+
+[.notes]
+--
+insomnia designer
+--
 

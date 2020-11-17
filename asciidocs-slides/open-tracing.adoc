@@ -3,3 +3,6 @@
 MicroProfile OpenTracing defines an API and associated behaviors that allow services to easily participate in a distributed tracing environment.
 
 == Jaeger
+
+image:https://www.jaegertracing.io/img/frontend-ui/embed-trace-view-with-hide-summary.png[Jaeger, Frontend/UI Configuration, 2020-11-04]
+_Source:link:https://www.jaegertracing.io/img/frontend-ui/embed-trace-view-with-hide-summary.png[Jaeger, Frontend/UI Configuration, 2020-11-04]_

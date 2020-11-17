@@ -1,4 +1,8 @@
 = MicroProfile Metrics
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
 
 MicroProfile Metrics provides a unified way for MicroProfile applications to export monitoring data to management agents.
 Metrics will also provide a common Java API for exposing their telemetry data.
@@ -32,4 +36,5 @@ Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Ope
 
 == Prometheus & Graphana
 
-asdf
+image:https://piotrminkowski.files.wordpress.com/2017/07/grafana-1.png?w=700[PIOTR'S TECHBLOG, 2020-11-05]
+_Source:link:https://piotrminkowski.files.wordpress.com/2017/07/grafana-1.png?w=700[PIOTR'S TECHBLOG, 2020-11-05]_
