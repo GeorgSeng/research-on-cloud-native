@@ -9,6 +9,7 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "orders")
+//The CoffeeOrder, which represents the entities of our domain
 class CoffeeOrder {
 
     @Id

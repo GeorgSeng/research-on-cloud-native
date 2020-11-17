@@ -10,7 +10,9 @@ import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Default
 import javax.inject.Inject
 
-@ApplicationScoped
+@ApplicationScoped // only once in application
+//The Orders class is responsible for storing and retrieving coffee
+//orders, including their status.
 class Orders {
 
     @Inject

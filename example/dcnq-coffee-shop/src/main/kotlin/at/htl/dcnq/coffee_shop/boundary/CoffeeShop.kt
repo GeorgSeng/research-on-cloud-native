@@ -18,6 +18,7 @@ import javax.ws.rs.core.Response
 
 @Stateless
 @ApplicationScoped
+// Domain Class
 class CoffeeShop {
     @Inject
     @field: Default
