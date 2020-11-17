@@ -1,11 +1,32 @@
 = Eclipse MicroProfile
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
 
+image:https://www.heise.de/imgs/18/2/8/4/5/6/6/4/MP3-5377f5f03eb03e51.png[Heise:
+Eclipse MicroProfile 3.3 aktualisiert fünf APIs
+, 2020-11-05]
+[.notes]
+--
 * Short talk about the Eclipse Foundation and its projects (Jakarta EE  and Eclipse MicroProfile)
 * naming alternatives Spring Boot, Vert.x, Amazon Correto
 * short comparison of Spring Boot and Eclipse MicroProfile
+--
 
 == Parts of the MicroProfile Specification
 #link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/asciidoc/required-apis.asciidoc[Eclipse MicroProfile Spec]#
 
 * MP 3 -> MP 4 - What are the new cool things?
 ** GraphQL
+* Updates:
+** Config 2.0
+** Fault Tolerance 3
+** Health 3.0
+** JWT Authentication
+** Metrics 3.0
+** OpenApi 2.0
+** OpenTracing 2.0
+** Rest Client 2.0
+
+
