@@ -17,23 +17,7 @@ public class PrimeNumberResource {
 
     private static final Logger LOG = Logger.getLogger(PrimeNumberResource.class);
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "hello";
-    }
-
     private final LongAccumulator highestPrime = new LongAccumulator(Long::max, 0);
-    // private final MeterRegistry registry;
-
-    // PrimeNumberResource(MeterRegistry registry) {
-    // this.registry = registry;
-
-    // // Create a gauge that uses the highestPrimeNumberSoFar method
-    // // to obtain the highest observed prime number
-    // registry.gauge("prime.number.max", this,
-    // PrimeNumberResource::highestObservedPrimeNumber);
-    // }
 
     @GET
     @Path("/{number}")

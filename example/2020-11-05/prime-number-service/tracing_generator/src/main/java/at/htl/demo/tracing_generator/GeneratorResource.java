@@ -10,7 +10,7 @@ import org.jboss.logging.Logger;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-@Path("/resteasy/hello")
+@Path("/generate")
 public class GeneratorResource {
 
     private static final Logger LOG = Logger.getLogger(GeneratorResource.class);
@@ -22,12 +22,12 @@ public class GeneratorResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Transactional
-    public String hello() {
+    public String generate() {
         var temp = primeService.getPrimeNumberStatus(System.currentTimeMillis());
         Message ms = new Message();
         ms.setMessage(temp);
         ms.persist();
-        LOG.info("hello");
-        return temp;
+        LOG.info("generate");
+        return temp.toString();
     }
 }
