@@ -9,11 +9,11 @@ _Source:link:https://github.com/eclipse/microprofile/blob/master/spec/src/main/a
 Motivation
 
 Health checks are used to check the state of a computing node from another machine (i.e. kubernetes service controller)
-with the primary target,  being cloud infrastructure environments where automated processes maintain the state of computing nodes.
+with the primary target, being cloud infrastructure environments where automatic processes maintain the state of computing nodes.
 
 In this scenario, health checks are used to determine if a computing node needs to be discarded (terminated, shutdown) and eventually replaced by another (healthy) instance.
 
-It’s not intended (although could be used) as a monitoring solution for human operators.
+It’s not intended (although it could be used) as a monitoring solution for human operators.
 
 link:https://github.com/eclipse/microprofile-health[Eclipse MicroProfile Health, 2020-10-28]
 --

@@ -36,26 +36,29 @@ include::plantuml/cloud-native-requirements.puml[]
 [.notes]
 --
 In this graphics we can see four different requirements that play a big role in cloud native.
-All together define what is important to a system to be truly cloud native.
+All together define, what is important to a system to be truly cloud native.
 
 * The first requirement is about always up.
-** This brings us to Resilience. A Microservice must be able to recover from a huge number of problems.
-*** This means redundancy is needed to be abele to jump in if a accident happens.
-*** Adaptability "able to adjust to new conditions" the environment and the software is constantly changing and this must be possible
+** This brings us to resilience. A microservice must be able to recover from a huge number of problems.
+*** This means redundancy is needed to be able to jump in if an accident happens.
+*** Adaptability (able to adjust to new conditions) to the environment and the software is constantly changing and this 
+must be possible
 *** Modularity enables the system to be
 **** less complex
-**** there for more easy to develop and maintain
+**** therefor more easy to develop and maintain
 **** in case of failure not everything would go down with it
 **** improves scaling and redundancy for backup
-* As a matter of fact the release frequency increased a lot
-** so Agile software fits with agile development is a must and benefits a lot in modern cloud native development.
-** Because Agile development work's great with the modular Microservice architecture of cloud native systems
-* Anywhere, any device Always up means there are times of high and of low demeaned. To cut coast the system needs to be abele to adapt to the demand and environment.
+* As a matter of fact the release frequency increased a lot.
+** So agile software fits with agile development and is a must and  therefor benefits a lot in modern cloud native 
+development, because agile development works great with the modular microservice architecture of cloud native systems
+* Anywhere, any device always up means there are times of high and of low demand. To cut coast the system needs to be 
+able to adapt to the demand and environment.
 
 based on Source:
 DAVIS, CORNELIA (2019). Cloud Native Patterns - DESIGNING CHANGE-TOLERANT SOFTWARE. Shelter Island, NY: Manning Publications Co., p.10-12
 
-As before mentioned the number of devices and services services increased over the years so the architecture has to be changed to fit then new needs.
+As before mentioned the number of devices and services  increased over the years so the architecture must be changed to 
+fit then new need.
 --
 
 === Reasons for a different type of software

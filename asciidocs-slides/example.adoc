@@ -16,7 +16,7 @@ include::fault-tolerance.adoc[leveloffset=+1]
 
 === Monitoring
 
-Is a musst due to the size and complexity of a Cloud-Native.
+Is a must due to the size and complexity of a Cloud-Native.
 
 This can be archived by:
 
@@ -41,9 +41,8 @@ Apache Zipkin or Jaeger.
 
 [.notes]
 --
-???? kürzen
-
-Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
+Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). 
+Developing Open Cloud Native Microservices. Sebastopol, CA. O'Rilly Media Inc., p.73
 --
 
 
@@ -62,23 +61,5 @@ Source: Charters, G., Daschner, S., Patel, P. & Pool, St. (2019). Developing Ope
 * https://www.ionos.at/digitalguide/websites/web-entwicklung/graphql/
 --
 
-[.old]
---
-=== OKD (Idea vor fancy deployment) NEE_MAG_NICHT
-
-The Community Distribution of Kubernetes that powers Red Hat OpenShift.
-
-
-Built around a core of OCI container packaging and Kubernetes container cluster management, OKD is also augmented by application lifecycle management functionality and DevOps tooling. OKD provides a complete open source container application platform.
-
-https://www.okd.io/
-
-
-https://www.okd.io/crc.html
-
-When prompted for a pull secret, use: {"auths":{"fake":{"auth": "Zm9vOmJhcgo="}}}
-
-https://code-ready.github.io/crc/
---
 
 

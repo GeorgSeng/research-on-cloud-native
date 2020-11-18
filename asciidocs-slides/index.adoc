@@ -56,8 +56,8 @@ include::open-tracing.adoc[leveloffset=+1]
 
 == Monitorring Short Recap
 
-* The *readiness and liveness* of your services through MicroProfile Health and the ability to integrate these with Kubernetes
-infrastructure.
+* The *readiness and liveness* of your services through MicroProfile Health and the 
+ability to integrate these with Kubernetes infrastructure.
 * The service *runtime analysis* through MicroProfile Metrics and
 the ability to monitor and alert through tools such as Prometheus and Grafana.
 * The *ability to understand the flow* of requests through a system

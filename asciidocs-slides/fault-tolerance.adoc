@@ -7,15 +7,15 @@
 
 [.notes]
 --
-Companies try to archive four-nine availability that means 99,99% up or 52 min and 36 sec downtime per year.
-Some even want to archive five-nine availability that means 5 min and 15 sec per year.
+Companies try to achieve four-nine availability that means 99,99% up or 52 min and 36 sec downtime per year.
+Some even want to achieve five-nine availability that means 5 min and 15 sec per year.
 
 Having a system with 10 Microservices means that all of them are a source to fail.
 Therefore the system has an overall availability of 99,99%.
 Having 100 means a overall system availability of 99,9%.
 
 This is very bad therefore every microservice needs a strategy to reduce the risk of failure and
-b a strategy on how to deal with failures of other dependent Microservices.
+a strategy on how to deal with failures of other dependent Microservices.
 
 -
 MicroProfile Fault Tolerance provides the ability to separate execution logic from business logic.
