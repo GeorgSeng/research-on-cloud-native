@@ -1,23 +1,43 @@
-# research-on-cloud-native
-research on cloud native computing for the course distributed computing networks
+= research-on-cloud-native
+
+research on cloud native computing for the course distributed computing and computer networks
+of the 5 grade Software Engendering department of the higher technical collage Leonding.
 
 
-## asciidoctor-docker-slides
+== The Aim of the Project
+is to give a overview about the following points.
+
+* To explain what cloud-native means
+* Why a different approach on software was needed for the new cloud environments
+* How to monitor the service's
+** Health
+** Metrics
+* How to trace the performance of services in a chain of processes
+** Open Tracing
+*** Jaeger
+* How to handle problems and errors
+** Fault Tolerance
+* How to expose the REST-API
+** OpenAPI
+*** Swaager-UI
+
+
+== asciidoctor-docker-slides
 
 create asciidoctor slides w/o installing any software on your computer besides docker
 
-* github-repo: https://github.com/htl-leonding-college/asciidoctor-docker-slides
-* Demo from bentolor hosted in gh-pages of this repo: https://htl-leonding-college.github.io/asciidoctor-docker-slides/docs/presentation.html
-* Simple Demo, also hosted in the gh-pages of this repo: https://htl-leonding-college.github.io/asciidoctor-docker-slides
+* link:https://github.com/htl-leonding-college/asciidoctor-docker-slides[github-repo]
+* link:https://htl-leonding-college.github.io/asciidoctor-docker-slides/docs/presentation.html[Demo from bentolor hosted in gh-pages of this repo]
+* link:https://htl-leonding-college.github.io/asciidoctor-docker-slides[Simple Demo, also hosted in the gh-pages of this repo]
 
 
-###  Use Case
+===  Use Case
 
 * Create slides with Asciidoctor.
 * Render it to revealjs in a docker container
 
-### Sources
+=== Sources
 
-* [Asciidoctor reveal.js](https://asciidoctor.org/docs/asciidoctor-revealjs/)
-* [Demo from Benjamin Schmid - Source](https://github.com/bentolor/java9to13)
-* [Demo from Benjamin Schmid - Presentation](https://bentolor.github.io/java9to13/)
+* link:https://asciidoctor.org/docs/asciidoctor-revealjs/[Asciidoctor reveal.js]
+* link:https://github.com/bentolor/java9to13[Demo from Benjamin Schmid - Source]
+* link:https://bentolor.github.io/java9to13/[Demo from Benjamin Schmid - Presentation]
